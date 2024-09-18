@@ -22,7 +22,7 @@
   transform: translateZ(150px);
 } */
 
-.main{
+/* .main{
   display: flex;
   justify-content: center;
   align-self: center;
@@ -40,4 +40,24 @@
 
 .btn:hover{
   transform: scale(1.06);
+} */
+
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1000ms;
+}
+
+@keyframes moving {
+  from{
+    transform: translate(0);
+  }
+  to{
+    transform: translate(500px);
+  }
 }
