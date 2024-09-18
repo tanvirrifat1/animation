@@ -1,21 +1,43 @@
-.main{
+/* .main{
   border:2px solid black;
   display: flex;
   justify-content: center;
   align-self: center;
   overflow: hidden;
   position: relative;
+  perspective: 1000px;
 }
 
 .box-1{
   position: absolute;
   background-color: red;
   height: 150px;
-  width: 100%;
+  width: 150px;
   transition-duration: 500ms;
   transition-timing-function: ease;
 }
 
+
 .box-1:hover{
-  transform: translateY(150px);
+  transform: translateZ(150px);
+} */
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.btn{
+  border: 2px solid blue;
+  color: blue;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.btn:hover{
+  transform: scale(1.06);
 }
